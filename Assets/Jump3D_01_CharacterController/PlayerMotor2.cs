@@ -60,11 +60,11 @@ namespace Jump3D_01{
 			Debug.Log (_col.tag);
 			if (_col.CompareTag ("Coin")) {
 				//+1
-				Coin _c1 = _col.GetComponent<Coin1>();
-				if (_c1 != null) {
-					Debug.Log (_c1.GetCollider ());
-					_c1.InvokeInfo ();
-					_c1.InvokeDestroy ();
+				Coin _c = _col.GetComponent<Coin1>();
+				if (_c != null) {
+					Debug.Log (_c.GetCollider ());
+					_c.InvokeInfo ();
+					_c.InvokeDestroy ();
 				}
 			}
 		}
